@@ -30,7 +30,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Box1/" />
         <folder expanded="1" path="animation-folder/Pig/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Red/" />
         <folder expanded="1" path="animation-folder/Green/" />
         <folder expanded="1" path="animation-folder/Yellow/" />

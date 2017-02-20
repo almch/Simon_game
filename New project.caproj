@@ -128,14 +128,6 @@
         <object-type name="Touch" sid="9664475903041198">
             <plugin id="Touch" />
         </object-type>
-        <object-type name="Sprite" sid="127534145556151">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="216367210226173" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Алексей Ломаченков\Dropbox\Учеба\8 семестр\Лаб 1 - саймон\red.PNG" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Start" sid="642806512889285">
             <plugin id="Button" />
         </object-type>
@@ -203,6 +195,12 @@
             </animation-folder>
         </object-type>
         <object-type name="Text2" sid="826958374347363">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="697366206770896">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="517229105684208">
             <plugin id="Text" />
         </object-type>
     </object-folder>

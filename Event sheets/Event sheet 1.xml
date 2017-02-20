@@ -40,6 +40,9 @@
                     <param id="1" name="Value">floor(random(4))</param>
                     <param id="2" name="Axis">0</param>
                 </action>
+                <action id="0" name="Set text" sid="761581919558543" type="Text4">
+                    <param id="0" name="Text">&quot;Саймон&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="326286161351286">
@@ -183,6 +186,30 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="426671880646270">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="446523189706873" type="System">
+                    <param id="0" name="Variable">ShowSteps</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="837320820729604" type="UserArray">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="1" name="Set size" sid="407929241166413" type="ShowArray">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="0" name="Set text" sid="738747130311224" type="Text4">
+                    <param id="0" name="Text">&quot;Твой&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="267117118842200">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="376768331434241" type="System">
@@ -300,12 +327,12 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="415028112729226" type="Text">
-                                    <param id="0" name="Text">&quot;Game Over&quot;</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="355158322764375" type="System">
                                     <param id="0" name="Variable">Steps</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="415028112729226" type="Text">
+                                    <param id="0" name="Text">&quot;Game Over&quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="817836419423067" type="Text1">
                                     <param id="0" name="Text">Steps</param>
@@ -313,9 +340,6 @@
                                 <action id="-9" name="Set value" sid="169543686818131" type="System">
                                     <param id="0" name="Variable">ShowSteps</param>
                                     <param id="1" name="Value">Steps</param>
-                                </action>
-                                <action id="0" name="Set text" sid="283326150865857" type="Text">
-                                    <param id="0" name="Text">&quot;&quot;</param>
                                 </action>
                                 <action id="1" name="Set size" sid="778015267529590" type="GameArray">
                                     <param id="0" name="Width">0</param>
@@ -331,6 +355,10 @@
                                     <param id="0" name="Width">0</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="859978790190143" type="System">
+                                    <param id="0" name="Variable">MadeSteps</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -377,6 +405,12 @@
                     <param id="1" name="Height">1</param>
                     <param id="2" name="Depth">1</param>
                 </action>
+                <action id="-16" name="Wait" sid="659569888782558" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="0" name="Set text" sid="825699759142764" type="Text4">
+                    <param id="0" name="Text">&quot;Саймон&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="828984399998253">
@@ -395,24 +429,17 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="426671880646270">
+        <event-block sid="771567490248468">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="446523189706873" type="System">
-                    <param id="0" name="Variable">ShowSteps</param>
+                <condition id="-14" name="Compare variable" sid="235525334000831" type="System">
+                    <param id="0" name="Variable">Steps</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
+                    <param id="2" name="Value">10</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="1" name="Set size" sid="837320820729604" type="UserArray">
-                    <param id="0" name="Width">0</param>
-                    <param id="1" name="Height">1</param>
-                    <param id="2" name="Depth">1</param>
-                </action>
-                <action id="1" name="Set size" sid="407929241166413" type="ShowArray">
-                    <param id="0" name="Width">0</param>
-                    <param id="1" name="Height">1</param>
-                    <param id="2" name="Depth">1</param>
+                <action id="0" name="Set text" sid="340890494210884" type="Text">
+                    <param id="0" name="Text">&quot;You win!&quot;</param>
                 </action>
             </actions>
         </event-block>
